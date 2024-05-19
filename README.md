@@ -1,41 +1,19 @@
-# Realtime Data Streaming | End-to-End Data Engineering Project
+**User Data Streaming**
 
-## Table of Contents
-- [Introduction](#introduction)
-- [System Architecture](#system-architecture)
-- [What You'll Learn](#what-youll-learn)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Watch the Video Tutorial](#watch-the-video-tutorial)
+The goal os this project is to act as a detailed and comprehensive guide for constructing a robust end-to-end data engineering pipeline. It encompasses the entire lifecycle of data, starting from the ingestion phase, followed by processing, and concluding with storage. The chosen tech stack includes a set of powerful tools such as Apache Airflow for workflow management, Python for scripting and programming, Apache Kafka for real-time data streaming, Apache Zookeeper for centralized service configuration, Apache Spark for large-scale data processing, and Cassandra for distributed database management. To ensure ease of deployment and scalability, all components are containerized using Docker, allowing for efficient management and orchestration of the entire pipeline.
 
-## Introduction
 
-This project serves as a comprehensive guide to building an end-to-end data engineering pipeline. It covers each stage from data ingestion to processing and finally to storage, utilizing a robust tech stack that includes Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker for ease of deployment and scalability.
-
-## System Architecture
-
-![System Architecture](https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png)
 
 The project is designed with the following components:
 
-- **Data Source**: We use `randomuser.me` API to generate random user data for our pipeline.
+- **Data Source**: `randomuser.me` API is used to generate random user data for pipeline.
 - **Apache Airflow**: Responsible for orchestrating the pipeline and storing fetched data in a PostgreSQL database.
 - **Apache Kafka and Zookeeper**: Used for streaming data from PostgreSQL to the processing engine.
 - **Control Center and Schema Registry**: Helps in monitoring and schema management of our Kafka streams.
 - **Apache Spark**: For data processing with its master and worker nodes.
 - **Cassandra**: Where the processed data will be stored.
 
-## What You'll Learn
-
-- Setting up a data pipeline with Apache Airflow
-- Real-time data streaming with Apache Kafka
-- Distributed synchronization with Apache Zookeeper
-- Data processing techniques with Apache Spark
-- Data storage solutions with Cassandra and PostgreSQL
-- Containerizing your entire data engineering setup with Docker
-
-## Technologies
-
+**Technologies: **
 - Apache Airflow
 - Python
 - Apache Kafka
@@ -45,22 +23,6 @@ The project is designed with the following components:
 - PostgreSQL
 - Docker
 
-## Getting Started
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/airscholar/e2e-data-engineering.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd e2e-data-engineering
-    ```
-
-3. Run Docker Compose to spin up the services:
-    ```bash
-    docker-compose up
-    ```
 
 For more detailed instructions, please check out the video tutorial linked below.
 
